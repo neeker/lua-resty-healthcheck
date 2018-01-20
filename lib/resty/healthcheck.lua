@@ -1042,13 +1042,14 @@ local defaults = {
       http_path = "/",
       healthy = {
         interval = 0, -- 0 = disabled by default
-        http_statuses = { 200, 302 },
+        http_statuses = { 200, 201, 202, 203, 204, 205, 206, 207, 208, 226,
+                          300, 301, 302, 303, 304, 305, 306, 307, 308, 
+                          400, 401, 402, 403, 404 },
         successes = 2,
       },
       unhealthy = {
         interval = 0, -- 0 = disabled by default
-        http_statuses = { 429, 404,
-                          500, 501, 502, 503, 504, 505 },
+        http_statuses = { 500, 501, 502, 503, 504, 505 },
         tcp_failures = 2,
         timeouts = 3,
         http_failures = 5,
@@ -1057,11 +1058,12 @@ local defaults = {
     passive = {
       healthy = {
         http_statuses = { 200, 201, 202, 203, 204, 205, 206, 207, 208, 226,
-                          300, 301, 302, 303, 304, 305, 306, 307, 308 },
+                          300, 301, 302, 303, 304, 305, 306, 307, 308, 
+                          400, 401, 402, 403, 404 },
         successes = 5,
       },
       unhealthy = {
-        http_statuses = { 429, 500, 503 },
+        http_statuses = { 500, 501, 502, 503, 504, 505 },
         tcp_failures = 2,
         timeouts = 7,
         http_failures = 5,
