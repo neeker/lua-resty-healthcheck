@@ -1,8 +1,8 @@
-package = "lua-resty-healthcheck"
-version = "0.3.0-1"
+package = "lua-resty-healthcheck-snz1"
+version = "0.3.1"
 source = {
-   url = "https://github.com/Kong/lua-resty-healthcheck/archive/0.3.0.tar.gz",
-   dir = "lua-resty-healthcheck-0.3.0"
+   url = "https://github.com/neeker/lua-resty-healthcheck/archive/0.3.1.tar.gz",
+   dir = "lua-resty-healthcheck-snz1-0.3.1"
 }
 description = {
    summary = "Healthchecks for OpenResty to check upstream service status",
@@ -12,7 +12,7 @@ description = {
       intervals.
    ]],
    license = "Apache 2.0",
-   homepage = "https://github.com/Kong/lua-resty-healthcheck"
+   homepage = "https://github.com/neeker/lua-resty-healthcheck"
 }
 dependencies = {
   "lua-resty-worker-events == 0.3.1",
