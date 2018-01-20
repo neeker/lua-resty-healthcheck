@@ -12,7 +12,7 @@ description = {
       intervals.
    ]],
    license = "Apache 2.0",
-   homepage = "https://github.com/neeker/lua-resty-healthcheck"
+   homepage = "https://github.com/neeker/lua-resty-healthcheck-snz1"
 }
 dependencies = {
   "lua-resty-worker-events == 0.3.1",
