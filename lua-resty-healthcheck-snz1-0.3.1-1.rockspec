@@ -1,7 +1,7 @@
 package = "lua-resty-healthcheck-snz1"
 version = "0.3.1-1"
 source = {
-   url = "https://github.com/neeker/lua-resty-healthcheck/archive/0.3.1.tar.gz",
+   url = "https://github.com/neeker/lua-resty-healthcheck-snz1/archive/0.3.1.tar.gz",
    dir = "lua-resty-healthcheck-snz1-0.3.1"
 }
 description = {
@@ -12,7 +12,7 @@ description = {
       intervals.
    ]],
    license = "Apache 2.0",
-   homepage = "https://github.com/neeker/lua-resty-healthcheck"
+   homepage = "https://github.com/neeker/lua-resty-healthcheck-snz1"
 }
 dependencies = {
   "lua-resty-worker-events == 0.3.1",
