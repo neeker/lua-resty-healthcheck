@@ -740,6 +740,7 @@ function checker:run_single_check(ip, port, hostname, healthy)
       sock:close()  -- timeout errors do not close the socket.
       return self:report_timeout(ip, port, "active")
     end
+    sock:close()
     return self:report_tcp_failure(ip, port, "send", "active")
   end
 
@@ -751,6 +752,7 @@ function checker:run_single_check(ip, port, hostname, healthy)
       sock:close()  -- timeout errors do not close the socket.
       return self:report_timeout(ip, port, "active")
     end
+    sock:close()
     return self:report_tcp_failure(ip, port, "receive", "active")
   end
 
